@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentAssertions" Version="7.2.0" />
+      <PackageReference Include="FluentAssertions.ArgumentMatchers.Moq" Version="3.2.0" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+      <PackageReference Include="MockQueryable.Moq" Version="8.0.0" />
+      <PackageReference Include="Moq" Version="4.20.72" />
+      <PackageReference Include="NUnit" Version="4.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ListTask.BusinessLogic\ListTask.BusinessLogic.csproj" />
+      <ProjectReference Include="..\ListTask.Service\ListTask.Service.csproj" />
+      <ProjectReference Include="..\ListTask.WebApi\ListTask.WebApi.csproj" />
+    </ItemGroup>
+
+</Project>
